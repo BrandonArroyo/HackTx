@@ -37,8 +37,10 @@ public class DrawView extends View implements OnTouchListener {
     public void onDraw(Canvas canvas) {
         for (Point point : points) {
             canvas.drawCircle(point.x, point.y, 5, paint);
+
             // Log.d(TAG, "Painting: "+point);
         }
+
     }
 
     public boolean onTouch(View view, MotionEvent event) {
